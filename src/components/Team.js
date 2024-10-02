@@ -34,9 +34,6 @@ const Team = () => {
                   <FaLinkedin className="text-black text-xl" />
                 </a>
                 <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
-                  <FaGithub className="text-black text-xl" />
-                </a>
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaBehance className="text-black text-xl" />
                 </a>
               </div>
