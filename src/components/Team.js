@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaBehance } from 'react-icons/fa'; 
 import teamMain from '../assets/images/team/team_main.svg';
 import virajImage from '../assets/images/team/viraj_team.svg';
@@ -9,8 +9,8 @@ import ankitImage from '../assets/images/team/ankith_team.svg';
 
 const Team = () => {
   return (
-    <div className='bg-[#1E1E1E]'>
-      <div className="w-full max-w-screen-xl mx-auto px-6 bg-[#1E1E1E] text-white poppins-regular">
+    <div className='bg-[#0E0E0E]'>
+      <div className="w-full max-w-screen-xl mx-auto px-6 bg-[#0E0E0E] text-white poppins-regular">
         <section className="py-12">
           <h1 className="text-5xl font-semibold poppins-medium">
             Meet the <span className="ciresta-color">Team</span>
@@ -30,10 +30,10 @@ const Team = () => {
               <h2 className="text-2xl font-semibold poppins-semibold">Viraj Kulkarni</h2>
               <p className="text-black-800 mt-3 poppins-medium"><span className='text-sm poppins-light'>Specialized in</span><br/> Designer & Front-end Development</p>
               <div className="flex justify-center mt-5 space-x-4">
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaLinkedin className="text-black text-xl" />
                 </a>
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaBehance className="text-black text-xl" />
                 </a>
               </div>
@@ -48,10 +48,10 @@ const Team = () => {
               <h2 className="text-2xl font-semibold poppins-semibold">Abhishek Singh</h2>
               <p className="text-black-800 mt-3 poppins-medium"><span className='text-sm poppins-light'>Specialized in</span><br/> Database & Back-end Development</p>
               <div className="flex justify-center mt-5 space-x-4">
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaLinkedin className="text-black text-xl" />
                 </a>
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaGithub className="text-black text-xl" />
                 </a>
               </div>
@@ -66,10 +66,10 @@ const Team = () => {
               <h2 className="text-2xl font-semibold poppins-semibold">Rahul. V B</h2>
               <p className="text-black-800 mt-3 poppins-medium"><span className='text-sm poppins-light'>Specialized in</span><br/> Agile & Server-side Management</p>
               <div className="flex justify-center mt-5 space-x-4">
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaLinkedin className="text-black text-xl" />
                 </a>
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaGithub className="text-black text-xl" />
                 </a>
               </div>
@@ -84,7 +84,7 @@ const Team = () => {
               <h2 className="text-2xl font-semibold poppins-semibold">Ankit Ronad</h2>
               <p className="text-black-800 mt-3 poppins-medium"><span className='text-sm poppins-light'>Specialized in</span><br/> Marketing & Client Management</p>
               <div className="flex justify-center mt-5 space-x-4">
-                <a href="#" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
+                <a href="https://www.abc.com" className="border-2 border-black p-2 rounded-lg hover:bg-gray-200">
                   <FaLinkedin className="text-black text-xl" />
                 </a>
               </div>
