@@ -139,4 +139,34 @@ code {
   background-repeat: no-repeat;
 }
 
+/* shiny effect */
+.shiny-effect {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
 
+.shiny-effect::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-20deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.shiny-effect:hover::before {
+  left: 100%;
+  opacity: 1;
+}
+.shiny-effect:hover {
+  transform: scale(1.05); /* Slightly enlarge the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for extra pop */
+}

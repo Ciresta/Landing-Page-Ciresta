@@ -29,10 +29,10 @@ const VisionMissionCommitment = () => {
 
   return (
     <div className="text-white font-poppins-regular">
-      <div className="w-full max-w-[1200px] mx-auto py-12 px-4 md:px-0"> {/* Added horizontal padding for mobile */}
+      <div className="w-full max-w-[1200px] mx-auto py-12 px-4 md:px-0">
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {data.map((item, index) => (
-            <div key={index} className="bg-[#1A1A1A] rounded-xl p-6 md:p-8 text-left h-auto">
+            <div key={index} className="shiny-effect bg-[#1A1A1A] rounded-xl p-6 md:p-8 text-left h-auto"> {/* Added shiny-effect class */}
               <div className="flex items-center space-x-2">
                 <img src={item.logo} alt="Logo" className="w-8 h-8" />
                 <h2 className="text-lg md:text-xl font-semibold">{item.title}</h2>
