@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaGlobe } from 'react-icons/fa';
-import { FaBehance } from 'react-icons/fa'; // Import Behance icon
+import { FaBehance } from 'react-icons/fa'; 
 import teamMain from '../assets/images/team/team_main.svg';
 import virajImage from '../assets/images/team/viraj_team.svg';
 import abhishekImage from '../assets/images/team/abhisheksingh_team.svg';
