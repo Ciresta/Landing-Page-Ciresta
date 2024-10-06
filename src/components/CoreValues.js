@@ -29,22 +29,22 @@ const VisionMissionCommitment = () => {
 
   return (
     <div className="text-white font-poppins-regular">
-      <div className="w-full mx-auto py-12 px-4 md:px-5">
-        <section className="flex flex-row w-70">
+      <div className="w-full max-w-[1400px] mx-auto py-12 px-4 md:px-0"> {/* Adjusted max width */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Adjusted grid layout and gap */}
           {data.map((item, index) => (
-            <div key={index} className="shiny-effect bg-[#1D1D1D55] rounded-xl p-6 mx-4 md:p-8  text-left h-auto"> {/* Added shiny-effect class */}
+            <div key={index} className="shiny-effect bg-[#1A1A1A] rounded-xl p-8 text-left h-auto"> {/* Adjusted padding */}
               <div className="flex items-center space-x-2">
-                <img src={item.logo} alt="Logo" className="w-8 h-8" />
-                <h2 className="text-lg md:text-xl font-semibold">{item.title}</h2>
+                <img src={item.logo} alt="Logo" className="w-10 h-10" /> {/* Increased logo size */}
+                <h2 className="text-lg md:text-2xl font-semibold">{item.title}</h2> {/* Increased title font size */}
               </div>
-              <p className="text-gray-400 mt-1 text-sm ml-10">{item.hashTag}</p>
-              <hr className="border-gray-600 my-4" />
-              <img src={item.doublequote} alt="Quote" className="w-8 h-8" />
-              <div className="flex space-x-2 mt-2">
+              <p className="text-gray-400 mt-1 text-sm ml-12">{item.hashTag}</p> {/* Increased left margin */}
+              <hr className="border-gray-600 my-6" /> {/* Adjusted margin around the divider */}
+              <img src={item.doublequote} alt="Quote" className="w-10 h-10" /> {/* Increased quote icon size */}
+              <div className="flex space-x-2 mt-4"> {/* Added margin-top to the quote */}
                 <i className="fas fa-quote-left text-indigo-500"></i>
-                <p className="text-gray-200 text-lg md:text-xl leading-relaxed">
+                <p className="text-gray-200 text-lg md:text-2xl leading-relaxed">
                   {item.quote.split(" ~ ")[0]} 
-                  <br/><span className="poppins-light-italic">{item.quote.split(" ~ ")[1]}</span> 
+                  <br/><span className="poppins-extralight-italic">{item.quote.split(" ~ ")[1]}</span> 
                 </p>
               </div>
             </div>
