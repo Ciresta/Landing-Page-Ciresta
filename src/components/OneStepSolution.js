@@ -29,7 +29,7 @@ const ServiceSection = () => {
 
                 <div style={{width: "31rem"}} className="bg-black text-gray-400 p-4 rounded-lg flex flex-col justify-center h-56 w-full md:w-80">
                     <p className="text-left text-[16px] md:text-[18px]">
-                        At <a href="#" className="text-indigo-500">Ciresta</a>, we're dedicated to helping
+                        At <a href="#ciresta" className="text-indigo-500">Ciresta</a>, we're dedicated to helping
                         small and medium level businesses grow through effective solutions that truly work.
                         We believe in building lasting relationships based on trust and mutual success.
                     </p>

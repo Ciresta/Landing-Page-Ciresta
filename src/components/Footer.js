@@ -35,15 +35,15 @@ const Footer = () => {
                     <div>
                         <h3 className="text-black text-left font-medium mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#" className="text-black">Apply</a></li>
-                            <li><a href="#" className="text-black">Learn more</a></li>
+                            <li><a href="#apply" className="text-black">Apply</a></li>
+                            <li><a href="#learnmore" className="text-black">Learn more</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-black text-left font-medium mb-4">Resources</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#" className="text-black">Help</a></li>
-                            <li><a href="#" className="text-black">Privacy Policy</a></li>
+                            <li><a href="#help" className="text-black">Help</a></li>
+                            <li><a href="#privacy" className="text-black">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,11 +54,11 @@ const Footer = () => {
                 <div className="flex items-center space-x-4 mt-4 md:mt-0">
                     <div className="flex items-center">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
-                        <a href="#" className="text-black-900 ml-2">Follow us on Instagram</a>
+                        <a href="#insta" className="text-black-900 ml-2">Follow us on Instagram</a>
                     </div>
                     <div className="flex items-center">
                         <FontAwesomeIcon icon={faLinkedin} className="text-black" />
-                        <a href="#" className="text-black ml-2">Follow us on LinkedIn</a>
+                        <a href="#linkedin" className="text-black ml-2">Follow us on LinkedIn</a>
                     </div>
                 </div>
             </div>
