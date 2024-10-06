@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.svg';
-import { FaBars, FaTimes } from 'react-icons/fa'; 
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const customHoverColor = '#6060bb'; 
+  const customHoverColor = '#6060bb';
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white">
+    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative">
       <div className="flex items-center space-x-2">
         <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
         <span className="font-semibold font-poppins text-2xl" style={{ color: customHoverColor }}>
@@ -32,7 +32,12 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className={`absolute top-16 right-0 w-full bg-black text-white md:hidden ${isOpen ? 'block' : 'hidden'} transition-all duration-300 ease-in-out`}>
+      <div
+        className={`absolute top-16 right-0 w-full bg-black text-white md:hidden transition-all duration-300 ease-in-out transform ${
+          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+        }`}
+        style={{ height: isOpen ? 'auto' : '0' }} // To ensure the height collapse when closed
+      >
         <NavLink href="#about">About</NavLink>
         <NavLink href="#services">Services</NavLink>
         <NavLink href="#team">Team</NavLink>
