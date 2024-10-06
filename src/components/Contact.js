@@ -16,7 +16,7 @@ const Contact = () => {
         </div>
 
         <div className="w-full md:w-1/2 bg-black rounded-lg p-8 flex flex-col justify-start">
-          <h2 className="text-3xl md:text-5xl font-semibold text-white poppins-medium">
+          <h2 className="text-3xl text-left  md:text-3xl font-semibold text-white poppins-medium">
             Contact us here
           </h2>
 
