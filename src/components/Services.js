@@ -5,8 +5,8 @@ import UIServices from './services/UIServices';
 function Services() {
   return (
     <div className="Services" id='services'>
-      <WebDev/>
       <UIServices/>
+      <WebDev/>
       </div>
   );
 }

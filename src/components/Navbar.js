@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative">
       <div className="flex items-center space-x-2">
         <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
-        <span className="font-semibold font-poppins text-2xl" style={{ color: customHoverColor }}>
+        <span className="font-semibold font-poppins text-xl" style={{ color: customHoverColor }}>
           Ciresta Technologies
         </span>
       </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
       <div
         className={`absolute top-16 right-0 w-full bg-black text-white md:hidden transition-all duration-300 ease-in-out transform ${
-          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
+          isOpen ? 'opacity-60 translate-y-0 border rounded-lg' : 'opacity-0 -translate-y-4'
         }`}
         style={{ height: isOpen ? 'auto' : '0' }} // To ensure the height collapse when closed
       >

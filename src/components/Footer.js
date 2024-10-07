@@ -18,12 +18,13 @@ const Footer = () => {
                     <ul className="text-black text-[15px] text-left space-y-1 mb-8">
                         <li className="flex items-center"><FontAwesomeIcon icon={faEnvelope} className="mr-2" /> ciresta.contact@gmail.com</li>
                         <li className="flex items-center"><FontAwesomeIcon icon={faPhoneAlt} className="mr-2"  style={{ transform: 'scaleX(-1)' }} /> +91 99451 82560</li>
+                        <li className="flex items-center"><FontAwesomeIcon icon={faPhoneAlt} className="mr-2"  style={{ transform: 'scaleX(-1)' }} /> +91 93411 49818</li>
                         <li className="flex items-center"><FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Hubli-Dharwad, India</li>
                     </ul>
                 </div>
 
-
-                <div className="flex flex-col mt-3 md:flex-row space-x-0 md:space-x-16 md:space-y-0 space-y-4">
+                {/* Adjusted for mobile view: Always in a row */}
+                <div className="flex flex-row space-x-8 md:space-x-16">
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Company</h3>
                         <ul className="space-y-2 text-left text-[15px]">
@@ -33,26 +34,26 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-black text-left font-medium mb-4">Internships</h3>
+                        <h3 className="text-black text-left font-semibold mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><a href="#apply" className="text-black">Apply</a></li>
                             <li><a href="#learnmore" className="text-black">Learn more</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-black text-left font-medium mb-4">Resources</h3>
+                        <h3 className="text-black text-left font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><a href="#help" className="text-black">Help</a></li>
-                            <li><a href="#privacy" className="text-black">Privacy Policy</a></li>
+                            <li><a href="https://www.termsfeed.com/live/d623cfb9-cefc-4ca7-b737-196cc7aac6da" className="text-black">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div className="flex flex-col md:flex-row justify-between w-[90%] items-center mt-8">
-                <p className="text-black">2024 &copy; copyright - Ciresta Technologies</p>
-                <div className="flex items-center space-x-4 mt-4 md:mt-0">
-                    <div className="flex items-center">
+                <p className="text-black text-center md:text-left">2024 &copy; copyright - Ciresta Technologies</p>
+                <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
+                    <div className="flex items-center mb-2 md:mb-0">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
                         <a href="#insta" className="text-black-900 ml-2">Follow us on Instagram</a>
                     </div>

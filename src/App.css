@@ -18,7 +18,10 @@ body{
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.bg-add{
+  background-image:url("./assets/images/team/abhi.svg") ;
+  background-repeat: no-repeat;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

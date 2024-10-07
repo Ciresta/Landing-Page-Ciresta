@@ -28,7 +28,7 @@ const VisionMissionCommitment = () => {
   ];
 
   return (
-    <div className="text-white font-poppins-regular">
+    <div className="text-white font-poppins-regular mt-[-50px]">
       <div className="w-full max-w-[1400px] mx-auto py-12 px-4 md:px-0"> {/* Adjusted max width */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Adjusted grid layout and gap */}
           {data.map((item, index) => (

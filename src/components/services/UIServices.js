@@ -22,13 +22,13 @@ const UIServices = () => {
       <div className="mb-10 text-left md:ml-20">
         <h2 className="text-4xl font-poppins-medium mb-6 text-center md:text-left">UI/UX Design</h2>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Landing Page
           </button>
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Websites
           </button>
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Mobile App Design
           </button>
         </div>
@@ -37,13 +37,13 @@ const UIServices = () => {
       <div className="text-left md:ml-20">
         <h2 className="text-4xl font-poppins-medium mb-6 text-center md:text-left">Graphic Design</h2>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Banners
           </button>
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Flyer/ Posters
           </button>
-          <button className="bg-[#1c1c1c] hover:bg-gray-700 text-white py-2 px-6 rounded-lg font-poppins-medium">
+          <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
             Social Media Posts
           </button>
         </div>

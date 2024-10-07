@@ -10,7 +10,7 @@ const WebDevService = () => {
                     <h1 className="text-4xl font-semibold">
                         Website and Software <span className="text-indigo-500">Development</span>
                     </h1>
-                    <a href="https://www.test.com" className="text-gray-400 hover:text-white mt-2 inline-block">Learn More &gt;</a>
+                    <a href="#contact" className="text-gray-400 hover:text-white mt-2 inline-block">Learn More &gt;</a>
                 </div>
 
                 <div className="relative bg-black lg:bg-[#494AA7] p-6 rounded-lg flex flex-col lg:flex-row items-start lg:justify-start mt-8 mb-8 mx-2 lg:mx-0"> {/* Adjusted margins for mobile */}
@@ -25,12 +25,12 @@ const WebDevService = () => {
 
                     <div className="flex-grow bg-black lg:bg-[#494AA7] h-full rounded-lg p-6">
                         <div className="grid grid-cols-2 gap-4">
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">Analytic Dashboard</button>
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">Billing Software</button>
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">Attendance System</button>
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">CRM</button>
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">Build Website</button>
-                            <button className="bg-[#282828] text-white py-2 px-4 rounded-lg">Mobile Responsive</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">Analytic Dashboard</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">Billing Software</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">Attendance System</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">CRM</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">Build Website</button>
+                            <button className="bg-[#282828] text-white shiny-effect py-2 rounded-lg w-full">Mobile Responsive</button>
                         </div>
                     </div>
                 </div>
