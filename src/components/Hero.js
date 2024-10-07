@@ -3,6 +3,7 @@ import heroImg from "../assets/images/hero/hero-img.svg";
 import logoImg from "../assets/images/logo.svg";
 import '../App.css';
 
+// hero section
 const Hero = () => {
   return (
     <section className="text-center py-20 mb-[-60px]">
