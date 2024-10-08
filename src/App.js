@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import CoreValues from './components/CoreValues';
-import PrivacyPolicy from './components/PrivacyPolicy';
+import Internship from './components/internship/Internship';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
             }
           />
 
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/internships" element={<Internship />} />
         </Routes>
       </div>
     </Router>

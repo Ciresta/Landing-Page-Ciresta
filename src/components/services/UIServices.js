@@ -19,7 +19,7 @@ const UIServices = () => {
         /> 
       </div>
       
-      <div className="mb-10 text-left md:ml-20">
+      <div className="mb-10 flex flex-col justify-center items-center md:ml-20">
         <h2 className="text-4xl font-poppins-medium mb-6 text-center md:text-left">UI/UX Design</h2>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
           <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">
@@ -34,7 +34,7 @@ const UIServices = () => {
         </div>
       </div>
 
-      <div className="text-left md:ml-20">
+      <div className="text-left flex flex-col justify-center items-center md:ml-20">
         <h2 className="text-4xl font-poppins-medium mb-6 text-center md:text-left">Graphic Design</h2>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start">
           <button className="bg-[#1c1c1c] shiny-effect text-white py-2 px-6 rounded-lg font-poppins-medium">

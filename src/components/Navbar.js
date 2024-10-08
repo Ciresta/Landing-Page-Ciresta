@@ -20,7 +20,6 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex space-x-16 font-semibold font-poppins pr-20 text-xl">
-        <NavLink href="#about">About</NavLink>
         <NavLink href="#services">Services</NavLink>
         <NavLink href="#team">Team</NavLink>
         <NavLink href="#contact">Contact Us</NavLink>
