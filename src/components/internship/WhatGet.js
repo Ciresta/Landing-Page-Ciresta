@@ -6,11 +6,11 @@ import CashPrizeIcon from '../../assets/images/internship/Gift.svg';
 const WhatYouWillGet = () => {
   return (
     <div className="bg-black text-white font-poppins p-8">
-      <h1 className="text-4xl font-bold mb-6 font-semibold text-center">
+      <h1 className="text-4xl font-bold mb-6 text-center">
         What you will <span className='ciresta-color'>get</span>
       </h1>
 
-      <div className="flex justify-center space-x-40">
+      <div className="flex flex-col md:flex-row justify-center items-center md:space-x-20 space-y-4 md:space-y-0">
         <div className="flex items-center space-x-2">
           <img src={CertificateIcon} alt="Completion Certificate" className="w-8 h-8" />
           <span className="text-xl font-light">Completion Certificate</span>
@@ -23,7 +23,7 @@ const WhatYouWillGet = () => {
 
         <div className="flex items-center space-x-2">
           <img src={CashPrizeIcon} alt="Win cash prize" className="w-8 h-8" />
-          <span className="text-xl font-light">Win cash prize for top performers</span>
+          <span className="text-xl font-light">Win cash prizes</span>
         </div>
       </div>
     </div>

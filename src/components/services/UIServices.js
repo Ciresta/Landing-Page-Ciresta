@@ -1,5 +1,5 @@
 import React from 'react';
-import workpc from '../../assets/images/services/servicepc.svg'; 
+import workpc from '../../assets/images/services/servicepc.png'; 
 import backgroundImage from '../../assets/images/services/work.svg'; 
 
 const UIServices = () => {

@@ -5,6 +5,7 @@ import CenterLogoIcon from '../../assets/images/internship/msme.svg'; // Replace
 
 const MovingMarquee = () => {
   return (
+    <>
     <div className="relative bg-black mt-16 text-white p-8">
       <div className="border-t-2 border-b-2 border-white p-4 overflow-hidden">
         <Marquee gradient={false} speed={50}>
@@ -18,6 +19,8 @@ const MovingMarquee = () => {
         <img src={CenterLogoIcon} alt="Center Logo" className="w-40 z-30 h-40 rounded-full" />
       </div>
     </div>
+      <p className='text-center poppins-light text-white mt-12 text-lg'>Work on real-time projects guided by experienced professionals, giving you hands-on experience<br/> in your chosen field of engineering.</p>
+      </>
   );
 };
 

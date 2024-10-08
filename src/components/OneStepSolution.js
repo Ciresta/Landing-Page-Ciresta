@@ -1,5 +1,5 @@
 import React from 'react';
-import PC from '../assets/images/onestep/pc.svg';
+import PC from '../assets/images/onestep/pc.png';
 import Cube from '../assets/images/onestep/cube.svg'; 
 import Diversity from '../assets/images/onestep/Diversity.svg';
 import WWW from '../assets/images/onestep/www.svg';   
