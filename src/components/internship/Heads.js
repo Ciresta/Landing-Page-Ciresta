@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundSVG from '../../assets/images/internship/internship-bg.svg';
+// import BackgroundSVG from '../../assets/images/internship/internship-bg.svg';
 import LogoSVG from '../../assets/images/logo.svg';
 
 const Heads = () => {
@@ -7,12 +7,7 @@ const Heads = () => {
     <div className="relative bg-[#121212] text-white flex items-center font-poppins h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${BackgroundSVG})`,
-          backgroundSize: 'cover',
-          height: '100%',
-          width: '100%',
-        }}
+        
       ></div>
 
       <div className="absolute inset-0 bg-black opacity-10"></div>

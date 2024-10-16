@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative">
+    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-20"> {/* Added z-20 */}
       <div className="flex items-center space-x-2">
         <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
         <span className="font-semibold font-poppins text-xl" style={{ color: customHoverColor }}>
@@ -34,15 +34,25 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`absolute top-16 right-0 w-full bg-black text-white md:hidden transition-all duration-300 ease-in-out transform ${
-          isOpen ? 'opacity-60 translate-y-0 border rounded-lg' : 'opacity-0 -translate-y-4'
+        className={`absolute top-16 right-0 w-full transition-all duration-300 ease-in-out transform ${
+          isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
         }`}
-        style={{ height: isOpen ? 'auto' : '0' }} // To ensure the height collapses when closed
+        style={{
+          height: isOpen ? 'auto' : '0',
+          background: 'rgba(255, 255, 255, 0.2)',
+          borderRadius: '16px',
+          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+          backdropFilter: 'blur(4.9px)',
+          WebkitBackdropFilter: 'blur(4.9px)',
+          border: '1px solid rgba(255, 255, 255, 0.3)',
+        }}
       >
-        <NavLink to="/internships">Internships</NavLink>
-        <NavLink to="#services">Services</NavLink>
-        <NavLink to="#team">Team</NavLink>
-        <NavLink to="#contact">Contact Us</NavLink>
+        <div className="flex flex-col">
+          <NavLink to="/internships">Internships</NavLink>
+          <NavLink to="#services">Services</NavLink>
+          <NavLink to="#team">Team</NavLink>
+          <NavLink to="#contact">Contact Us</NavLink>
+        </div>
       </div>
     </nav>
   );
