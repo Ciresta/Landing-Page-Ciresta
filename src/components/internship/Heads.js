@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import LogoSVG from '../../assets/images/logo.svg';
-import BackgroundImage from '../../assets/images/internship/internship_bg.jpg'; 
+import BackgroundImage from '../../assets/images/internship/internship-bg-new.jpg'; 
 
 const Heads = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
