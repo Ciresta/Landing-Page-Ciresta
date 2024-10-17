@@ -31,7 +31,7 @@ const Team = () => {
             <div className="absolute top-0 sm:top-10 left-0 right-0 text-center text-black">  
               <h2 className="text-lg sm:text-xl mt-2 md:text-2xl font-semibold poppins-semibold">Viraj Kulkarni</h2>
               <p className="mt-1 poppins-light text-xs sm:text-sm md:text-base"> {/* Reduced gap */}
-                <small>Specialized in</small><br />Designer & Front-end Development
+                Designer & Front-end Development
               </p>
               <div className="flex justify-center mt-2 space-x-4"> {/* Reduced gap */}
                 <a href="https://www.abc.com" className="p-1 sm:p-2 rounded-lg bg-white text-black border-2 border-black hover:bg-gray-200"> {/* Smaller padding on mobile */}
@@ -50,7 +50,7 @@ const Team = () => {
             <div className="absolute top-0 sm:top-10 left-0 right-0 text-center text-black">
               <h2 className="text-lg sm:text-xl md:text-2xl mt-2 font-semibold poppins-semibold">Abhishek Singh</h2>
               <p className="mt-1 poppins-light text-xs sm:text-sm md:text-base">
-                <small>Specialized in</small><br />Database & Back-end Development
+                Database & Back-end Development
               </p>
               <div className="flex justify-center mt-2 space-x-4">
                 <a href="https://www.abc.com" className="p-1 sm:p-2 rounded-lg bg-white text-black border-2 border-black hover:bg-gray-200">
@@ -69,7 +69,7 @@ const Team = () => {
             <div className="absolute top-0 sm:top-10 left-0 right-0 text-center text-black">
               <h2 className="text-lg sm:text-xl md:text-2xl mt-2 font-semibold poppins-semibold">Rahul. V B</h2>
               <p className="mt-1 poppins-light text-xs sm:text-sm md:text-base">
-                <small>Specialized in</small><br />Agile & Server-side Management
+                Agile & Server-side Management
               </p>
               <div className="flex justify-center mt-2 space-x-4">
                 <a href="https://www.abc.com" className="p-1 sm:p-2 rounded-lg bg-white text-black border-2 border-black hover:bg-gray-200">
@@ -88,7 +88,7 @@ const Team = () => {
             <div className="absolute top-0 sm:top-10 left-0 right-0 text-center text-black">
               <h2 className="text-lg sm:text-xl md:text-2xl mt-2 font-semibold poppins-semibold">Ankit Ronad</h2>
               <p className="mt-1 poppins-light text-xs sm:text-sm md:text-base">
-                <small>Specialized in</small><br />Marketing & Client Management
+                Marketing & Client Management
               </p>
               <div className="flex justify-center mt-2 space-x-4">
                 <a href="https://www.abc.com" className="p-1 sm:p-2 rounded-lg bg-white text-black border-2 border-black hover:bg-gray-200">
