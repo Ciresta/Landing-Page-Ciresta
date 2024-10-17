@@ -34,7 +34,7 @@ const BenefitCards = () => {
       <div className="w-full max-w-[1400px] mx-auto py-12 px-4 md:px-0">
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {data.map((item, index) => (
-            <div key={index} className="shiny-effect p-15 bg-[#1f1f1f] rounded-xl p-8 text-left h-auto">
+            <div key={index} className="shiny-effect m-1 p-15 bg-[#1f1f1f] rounded-xl p-8 text-left h-auto">
               <img src={item.logo} alt="Logo" className=    "w-22 h-22 block" /><br />
               <div className="flex items-center space-x-2">
                 <h2 className="text-lg md:text-3xl font-medium">{item.title}</h2>

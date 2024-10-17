@@ -6,7 +6,7 @@ import CenterLogoIcon from '../../assets/images/internship/msme.svg';
 const MovingMarquee = () => {
   return (
     <>
-      <div className="relative bg-black mt-16 text-white p-8">
+      <div className="relative bg-black mt-16 text-white">
         <div className="border-t-2 border-b-2 border-white p-4 overflow-hidden">
           <Marquee gradient={false} speed={50}>
             <div className="flex items-center space-x-4">
