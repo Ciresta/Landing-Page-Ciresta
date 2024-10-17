@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { AiOutlineArrowRight } from 'react-icons/ai'; 
 import LogoSVG from '../../assets/images/logo.svg';
 import BackgroundImage from '../../assets/images/internship/internship_bg.jpg'; 
 
@@ -12,7 +13,6 @@ const Heads = () => {
 
     window.addEventListener('resize', handleResize);
     
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -20,7 +20,7 @@ const Heads = () => {
 
   return (
     <div
-      className={`relative text-white flex items-center font-poppins rounded-lg mb-[-30px] ${isDesktop ? 'h-screen' : ''}`}
+      className={`relative text-white flex items-center font-poppins rounded-lg mb-[-30px] ${isDesktop ? 'h-screen' : 'h-44'}`}
       style={{
         backgroundImage: `url(${BackgroundImage})`,
         backgroundSize: 'cover', 
@@ -37,9 +37,10 @@ const Heads = () => {
           <h2 className="text-2xl sm:text-4xl lg:text-6xl poppins-semibold mt-1 sm:mt-2 text-white">Internship Program</h2>
           <a
             href="#register"
-            className="inline-block ciresta-bg text-white text-center py-2 px-4 rounded-lg shadow-lg w-32 sm:w-40 text-xs sm:text-sm mt-4 font-medium"
-          >
+            className="inline-flex items-center ciresta-bg text-white text-center py-2 px-4 rounded-lg shadow-lg w-32 sm:w-40 text-xs sm:text-sm mt-4 font-medium"
+           style={{width: "18vh"}}>
             Apply Now
+            <AiOutlineArrowRight className="" />
           </a>
         </div>
       </div>
