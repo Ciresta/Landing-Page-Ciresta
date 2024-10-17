@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.svg';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,22 +12,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-20"> {/* Added z-20 */}
-      <Link to="/">
-      <div className="flex items-center space-x-2">
-        <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
-        <span className="font-semibold font-poppins text-xl" style={{ color: customHoverColor }}>
-          Ciresta Technologies
-        </span>
-      </div>
-      </Link>
-      
+    <nav className="flex sticky-nav-ciresta justify-between items-center py-6 px-4 md:px-12 text-white relative z-20" style={{position: "sticky"}}>
+      <NavLink to="/">
+        <div className="flex items-center space-x-2">
+          <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
+          <span className="font-semibold font-poppins text-xl" style={{ color: customHoverColor }}>
+            Ciresta Technologies
+          </span>
+        </div>
+      </NavLink>
 
       <div className="hidden md:flex space-x-16 font-semibold font-poppins pr-20 text-xl">
-        <NavLink to="/internships">Internships</NavLink>
-        <NavLink to="#services">Services</NavLink>
-        <NavLink to="#team">Team</NavLink>
-        <NavLink to="#contact">Contact Us</NavLink>
+        <NavLinkStyled to="/internships">Internships</NavLinkStyled>
+        <NavLinkStyled to="#services">Services</NavLinkStyled>
+        <NavLinkStyled to="#team">Team</NavLinkStyled>
+        <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
       </div>
 
       <div className="md:hidden">
@@ -51,26 +50,27 @@ const Navbar = () => {
         }}
       >
         <div className="flex flex-col">
-          <NavLink to="/internships">Internships</NavLink>
-          <NavLink to="#services">Services</NavLink>
-          <NavLink to="#team">Team</NavLink>
-          <NavLink to="#contact">Contact Us</NavLink>
+          <NavLinkStyled to="/internships">Internships</NavLinkStyled>
+          <NavLinkStyled to="#services">Services</NavLinkStyled>
+          <NavLinkStyled to="#team">Team</NavLinkStyled>
+          <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
         </div>
       </div>
     </nav>
   );
 };
 
-const NavLink = ({ to, children }) => (
-  <Link
+const NavLinkStyled = ({ to, children }) => (
+  <NavLink
     to={to}
     className="block px-4 py-2 text-xl transition-colors duration-300 ease-in-out"
     style={{ transition: 'color 0.3s ease-in-out' }}
-    onMouseEnter={(e) => (e.target.style.color = '#6060bb')}
-    onMouseLeave={(e) => (e.target.style.color = 'white')}
+    activeStyle={{ color: '#6060bb' }} // Purple color when active
+    onMouseEnter={(e) => (e.target.style.color = '#6060bb')} // Hover effect
+    onMouseLeave={(e) => (e.target.style.color = e.target.classList.contains('active') ? '#6060bb' : 'white')} // Retain purple if active, revert to white if inactive
   >
     {children}
-  </Link>
+  </NavLink>
 );
 
 export default Navbar;

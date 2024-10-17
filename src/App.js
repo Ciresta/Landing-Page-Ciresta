@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 import CoreValues from './components/CoreValues';
 import Internship from './components/internship/Internship';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="/"
             element={
               <>
+                <Navbar />
                 <HeroMain />
                 <CoreValues />
                 <OneStepSolution />

@@ -124,16 +124,16 @@ code {
 
 /* ciresta templates use this classes */
 
-.ciresta-color{
+.ciresta-color {
   color: #6060bb;
 }
 
-.ciresta-bg{
+.ciresta-bg {
   background-color: #6060bb;
 }
 
 .bg-custom {
-  background-image: url('/src/assets/images/hero/pattern.svg'); 
+  background-image: url('/src/assets/images/hero/pattern.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,7 +166,25 @@ code {
   left: 100%;
   opacity: 1;
 }
+
 .shiny-effect:hover {
-  transform: scale(1.05); /* Slightly enlarge the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for extra pop */
+  transform: scale(1.05);
+  /* Slightly enlarge the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional shadow for extra pop */
+}
+
+.sticky-nav-ciresta {
+  top: 0;
+  position: sticky;
+  background: rgba(72, 72, 72, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(72, 72, 72, 0.3);
+}
+
+.sidebar a.active {
+  color: red;
 }
