@@ -2,10 +2,14 @@ import React from 'react';
 import heroImg from "../assets/images/hero/hero-img.png";
 import logoImg from "../assets/images/logo.svg";
 import '../App.css';
+import Navbar from './Navbar';
+
 
 // hero section
 const Hero = () => {
   return (
+    <>
+    <Navbar />
     <section className="text-center py-20 mb-[-60px]">
       <div className="mb-8">
         <img src={logoImg} alt="Logo" className="mx-auto h-20 md:h-24 lg:h-28" />
@@ -34,6 +38,7 @@ const Hero = () => {
         </p>
       </section>
     </section>
+    </>
   );
 };
 

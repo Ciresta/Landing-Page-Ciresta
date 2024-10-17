@@ -76,11 +76,11 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
                     <div className="flex items-center mb-2 md:mb-0">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
-                        <a href="#insta" className="text-black-900 ml-2">Follow us on Instagram</a>
+                        <a href="https://www.instagram.com/ciresta.official" className="text-black-900 ml-2">Follow us on Instagram</a>
                     </div>
                     <div className="flex items-center">
                         <FontAwesomeIcon icon={faLinkedin} className="text-black" />
-                        <a href="#linkedin" className="text-black ml-2">Follow us on LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/ciresta-company-0168ba333/" className="text-black ml-2">Follow us on LinkedIn</a>
                     </div>
                 </div>
                 <p className="text-gray-600 text-center text-sm md:text-left" style={{fontSize: "12px", margin: "7px"}}>2024 &copy; Copyright - Ciresta Technologies</p>

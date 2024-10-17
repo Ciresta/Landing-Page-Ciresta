@@ -44,7 +44,7 @@ const Navbar = () => {
           borderRadius: '16px',
           boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
           backdropFilter: 'blur(6.7px)',
-          WebkitBackdropFilter: 'blur(6.7px)', // Vendor prefix for Safari
+          WebkitBackdropFilter: 'blur(6.7px)', 
           border: '1px solid rgba(72, 72, 72, 0.3)',
         }}
         
