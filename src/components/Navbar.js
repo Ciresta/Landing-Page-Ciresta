@@ -36,18 +36,20 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`absolute top-16 right-0 w-full transition-all duration-300 ease-in-out transform ${
+        className={`absolute top-20 right-0 w-full transition-all duration-300 ease-in-out transform ${
           isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
         }`}
         style={{
-          height: isOpen ? 'auto' : '0',
-          background: 'rgba(255, 255, 255, 0.2)',
+          background: 'rgba(72, 72, 72, 0.64)',
           borderRadius: '16px',
           boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-          backdropFilter: 'blur(4.9px)',
-          WebkitBackdropFilter: 'blur(4.9px)',
-          border: '1px solid rgba(255, 255, 255, 0.3)',
+          backdropFilter: 'blur(6.7px)',
+          WebkitBackdropFilter: 'blur(6.7px)', // Vendor prefix for Safari
+          border: '1px solid rgba(72, 72, 72, 0.3)',
         }}
+        
+        
+        
       >
         <div className="flex flex-col">
           <NavLinkStyled to="/internships">Internships</NavLinkStyled>
