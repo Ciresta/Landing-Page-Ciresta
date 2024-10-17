@@ -13,12 +13,15 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center py-6 px-4 md:px-12 text-white relative z-20"> {/* Added z-20 */}
+      <Link to="/">
       <div className="flex items-center space-x-2">
         <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
         <span className="font-semibold font-poppins text-xl" style={{ color: customHoverColor }}>
           Ciresta Technologies
         </span>
       </div>
+      </Link>
+      
 
       <div className="hidden md:flex space-x-16 font-semibold font-poppins pr-20 text-xl">
         <NavLink to="/internships">Internships</NavLink>

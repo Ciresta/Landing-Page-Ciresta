@@ -73,8 +73,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col md:flex-row justify-between w-[90%] items-center mt-8">
-                <p className="text-black text-center md:text-left">2024 &copy; copyright - Ciresta Technologies</p>
-                <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
+            <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
                     <div className="flex items-center mb-2 md:mb-0">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
                         <a href="#insta" className="text-black-900 ml-2">Follow us on Instagram</a>
@@ -84,6 +83,7 @@ const Footer = () => {
                         <a href="#linkedin" className="text-black ml-2">Follow us on LinkedIn</a>
                     </div>
                 </div>
+                <p className="text-black text-center md:text-left">2024 &copy; copyright - Ciresta Technologies</p>
             </div>
         </div>
     );

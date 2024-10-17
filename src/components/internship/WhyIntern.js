@@ -11,7 +11,7 @@ const InternshipReasons = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-12 mt-10">
+    <div className="bg-black text-white py-12 mt-0">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl lg:text-4xl poppins-semibold text-left mb-8">
           Why Intern at <span className='ciresta-color'>Ciresta Technologies</span>
