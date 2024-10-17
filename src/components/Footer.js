@@ -83,7 +83,7 @@ const Footer = () => {
                         <a href="#linkedin" className="text-black ml-2">Follow us on LinkedIn</a>
                     </div>
                 </div>
-                <p className="text-black text-center md:text-left">2024 &copy; copyright - Ciresta Technologies</p>
+                <p className="text-gray-600 text-center text-sm md:text-left" style={{fontSize: "12px", margin: "7px"}}>2024 &copy; Copyright - Ciresta Technologies</p>
             </div>
         </div>
     );

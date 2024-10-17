@@ -48,7 +48,7 @@ const Team = () => {
           <div className="relative text-center">
             <img src={abhishekImage} alt="Abhishek Singh" className="w-full h-auto rounded-lg" />
             <div className="absolute top-0 sm:top-10 left-0 right-0 text-center text-black">
-              <h2 className="text-lg sm:text-xl md:text-2xl mt-2 font-semibold poppins-semibold">Abhishek Singh</h2>
+              <h2 className="text-lg sm:text-xl md:text-2xl mt-2 font-semibold poppins-semibold">Abhisheksingh</h2>
               <p className="mt-1 poppins-light text-xs sm:text-sm md:text-base">
                 Database & Back-end Development
               </p>
