@@ -176,10 +176,11 @@ code {
 
 .sticky-nav-ciresta {
   top: 0;
-  position: sticky;
+  position: absolute;
+  background-image: url('/src/assets/images/hero/pattern.svg');
   background: rgba(72, 72, 72, 0.25);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(72, 72, 72, 0.3);

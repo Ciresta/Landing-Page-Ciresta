@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import LogoSVG from '../../assets/images/logo.svg';
 import BackgroundImage from '../../assets/images/internship/internship-bg-new.jpg'; 
 
+
 const Heads = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
 
@@ -32,7 +33,7 @@ const Heads = () => {
         <div className="flex flex-col justify-center w-full lg:w-1/2 text-left items-start h-full p-4 sm:p-6 md:p-8 rounded-md">
           <img src={LogoSVG} alt="Ciresta Technologies Logo" className="w-12 h-12 mb-2 sm:w-16 sm:h-16 sm:mb-6" />
           <p className="text-lg sm:text-2xl lg:text-4xl text-gray-300 mb-1 sm:mb-2 poppins-light">Learn to solve Real-time problems with</p>
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl poppins-light mt-1 text-white">"Ciresta Technologies"</h1>
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl poppins-light-italic mt-1 text-white">"Ciresta Technologies"</h1>
           <h2 className="text-2xl sm:text-4xl lg:text-6xl poppins-semibold mt-1 sm:mt-2 text-white">Internship Program</h2>
           <a
             href="#register"

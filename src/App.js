@@ -1,13 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroMain from './components/HeroMain';
-import Team from './components/Team';
-import OneStepSolution from './components/OneStepSolution';
-import Contact from './components/Contact';
-import Services from './components/Services';
 import Footer from './components/Footer';
-import CoreValues from './components/CoreValues';
 import Internship from './components/internship/Internship';
+import About from './components/MainAbout';
+import MainServices from './components/MainServices';
 
 function App() {
   return (
@@ -18,18 +15,22 @@ function App() {
             path="/"
             element={
               <>
+                {/* <Navbar /> */}
                 <HeroMain />
-                <CoreValues />
+                {/* <CoreValues />
                 <OneStepSolution />
                 <Services />
                 <Team />
                 <Contact />
+                 */}
                 <Footer />
               </>
             }
           />
 
           <Route path="/internships" element={<Internship />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<MainServices />} />
         </Routes>
       </div>
     </Router>

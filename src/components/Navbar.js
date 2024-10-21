@@ -24,8 +24,8 @@ const Navbar = () => {
 
       <div className="hidden md:flex space-x-16 font-semibold font-poppins pr-20 text-xl">
         <NavLinkStyled to="/internships">Internships</NavLinkStyled>
-        <NavLinkStyled to="#services">Services</NavLinkStyled>
-        <NavLinkStyled to="#team">Team</NavLinkStyled>
+        <NavLinkStyled to="/about">About</NavLinkStyled>
+        <NavLinkStyled to="/services">Services</NavLinkStyled>
         <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
       </div>
 
@@ -53,8 +53,8 @@ const Navbar = () => {
       >
         <div className="flex flex-col">
           <NavLinkStyled to="/internships">Internships</NavLinkStyled>
-          <NavLinkStyled to="#services">Services</NavLinkStyled>
-          <NavLinkStyled to="#team">Team</NavLinkStyled>
+          <NavLinkStyled to="/about">About</NavLinkStyled>
+          <NavLinkStyled to="/services">Services</NavLinkStyled>
           <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
         </div>
       </div>

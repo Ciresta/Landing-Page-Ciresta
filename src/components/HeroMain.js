@@ -1,10 +1,24 @@
 import React from 'react';
 import Hero from './Hero';
 
+import CoreValues from './CoreValues';
+import OneStepSolution from './OneStepSolution';
+import Services from './Services';
+import Team from './Team';
+import Contact from './Contact';
+
+
 const HeroSection = () => {
   return (
-    <div className="bg-custom min-h-screen"> 
+    <div className="">
+       
       <Hero />
+      <CoreValues />
+      <OneStepSolution />
+      <Services />
+      <Team />
+      <Contact />
+      
     </div>
   );
 };
