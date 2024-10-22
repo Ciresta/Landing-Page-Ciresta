@@ -2,8 +2,10 @@ import React from 'react';
 import heroImage from '../assets/images/services/services_hero.svg';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Services from './Services';
+import ServicesDown from './ServicesBottom';
 
-const Services = () => {
+const MainServices = () => {
   return (
     <div className="relative">
       <Navbar />
@@ -37,11 +39,13 @@ const Services = () => {
             <span className="italic text-indigo-400">~ ciresta</span>
           </p>
         </div>
-      </section>
 
+      </section>
+        <Services />
+      <ServicesDown/>
       <Footer />
     </div>
   );
 };
 
-export default Services;
+export default MainServices;

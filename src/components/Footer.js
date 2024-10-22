@@ -24,7 +24,7 @@ const Footer = () => {
 
     return (
         <div className="h-auto bg-gray-200 rounded-xl flex flex-col justify-center items-center p-4 mx-4 mb-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] mb-6">
+            <div className="grid grid-cols-1 mt-8 md:grid-cols-2 gap-4 w-[90%] mb-6">
                 <div className="flex flex-col">
                     <div className="flex items-start mb-4">
                         <img src={logo} alt="Ciresta Technologies Logo" className="w-6 h-6 flex-shrink-0 mr-2" />
