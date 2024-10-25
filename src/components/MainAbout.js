@@ -5,13 +5,13 @@ import image1 from '../assets/images/about/info/Group 48095356(1).svg';
 import image2 from '../assets/images/about/info/Group 48095357(1).svg';
 import image3 from '../assets/images/about/info/Group 48095355.svg';
 import image4 from '../assets/images/about/info/Group 48095348.svg';
-import Navbar from './Navbar';
-import Footer from './Footer';
+// import Navbar from './Navbar';
+// import Footer from './Footer';
 
 const AboutUs = () => {
   return (
     <div className="relative">
-      <Navbar />
+      {/* <Navbar /> */}
       <section className="relative">
         <img 
           src={aboutUsImg} 
@@ -74,7 +74,7 @@ const AboutUs = () => {
           <div className="absolute inset-0 bg-black opacity-0" />
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

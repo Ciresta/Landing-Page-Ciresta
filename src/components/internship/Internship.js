@@ -6,15 +6,15 @@ import WhatYouWillGet from "./WhatGet";
 import Recommendation from "./Recommendation";
 import Register from "./Register";
 import Marquee from "./Marquee";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+// import Navbar from "../../components/Navbar";
+// import Footer from "../../components/Footer";
 import Domains from "./Domains";
 
 
 function Internship() {
   return (
     <div>   
-        <Navbar/>
+        {/* <Navbar/> */}
         <Heads />
         <BenefitCards/>
         <Marquee/>
@@ -23,7 +23,7 @@ function Internship() {
         <WhatYouWillGet/>
         <Recommendation/>
         <Register/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

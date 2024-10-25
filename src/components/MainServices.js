@@ -1,7 +1,7 @@
 import React from 'react';
 import heroImage from '../assets/images/services/services_hero.svg';
-import Navbar from './Navbar';
-import Footer from './Footer';
+// import Navbar from './Navbar';
+// import Footer from './Footer';
 import Services from './Services';
 import ServicesDown from './services/ServicesBottom';
 import ZigZagService from './services/ZigZagService';
@@ -9,7 +9,7 @@ import ZigZagService from './services/ZigZagService';
 const MainServices = () => {
   return (
     <div className="relative">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className="relative">
         <img
@@ -46,7 +46,7 @@ const MainServices = () => {
       <Services />
       <ServicesDown />
       <ZigZagService />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

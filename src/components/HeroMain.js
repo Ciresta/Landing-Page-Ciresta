@@ -5,7 +5,6 @@ import CoreValues from './CoreValues';
 import OneStepSolution from './OneStepSolution';
 import Services from './Services';
 import Team from './Team';
-// import Contact from './Contact';
 
 
 const HeroSection = () => {
