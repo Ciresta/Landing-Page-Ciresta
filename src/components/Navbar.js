@@ -26,7 +26,7 @@ const Navbar = () => {
         <NavLinkStyled to="/internships">Internships</NavLinkStyled>
         <NavLinkStyled to="/about">About</NavLinkStyled>
         <NavLinkStyled to="/services">Services</NavLinkStyled>
-        <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
+        <NavLinkStyled to="/contact">Contact Us</NavLinkStyled>
       </div>
 
       <div className="md:hidden">
@@ -55,7 +55,7 @@ const Navbar = () => {
           <NavLinkStyled to="/internships">Internships</NavLinkStyled>
           <NavLinkStyled to="/about">About</NavLinkStyled>
           <NavLinkStyled to="/services">Services</NavLinkStyled>
-          <NavLinkStyled to="#contact">Contact Us</NavLinkStyled>
+          <NavLinkStyled to="/contact">Contact Us</NavLinkStyled>
         </div>
       </div>
     </nav>

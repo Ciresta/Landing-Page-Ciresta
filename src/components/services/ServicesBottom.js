@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Import images from assets
-import leftImage from '../assets/images/services/mob1.svg';
-import centerImage from '../assets/images/services/lap1.svg';
-import rightImage from '../assets/images/services/mob2.svg';
+import leftImage from '../../assets/images/services/mob1.svg';
+import centerImage from '../../assets/images/services/lap1.svg';
+import rightImage from '../../assets/images/services/mob2.svg';
 
 const ButtonGroup = () => {
   return (

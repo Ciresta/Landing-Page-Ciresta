@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com"; // Import Email.js
 import ContactImg from "../assets/images/contact/contact.svg";
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,6 +41,8 @@ const Contact = () => {
   };
 
   return (
+    <>
+      <Navbar/>
     <div className="bg-black" id='contact'>
       <div className="w-full max-w-screen-xl mx-auto py-12 px-4 md:px-12 flex flex-col md:flex-row items-stretch space-y-8 md:space-y-0 md:space-x-8">
         <div className="hidden md:flex bg-black rounded-lg w-full md:w-1/2 p-8 items-center justify-center">
@@ -113,6 +117,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
