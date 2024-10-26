@@ -72,7 +72,7 @@ const Footer = () => {
                         <h3 className="text-black text-left font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><a href="#help" className="text-black">Help</a></li>
-                            <li><a href="https://www.termsfeed.com/live/d623cfb9-cefc-4ca7-b737-196cc7aac6da" className="text-black">Privacy Policy</a></li>
+                            <li><a href="https://www.termsfeed.com/live/f5d7351c-2f01-434c-83a7-6b87bfdf2624" className="text-black">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div>
