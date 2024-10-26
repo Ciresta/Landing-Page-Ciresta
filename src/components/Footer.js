@@ -49,22 +49,21 @@ const Footer = () => {
                             Hubli-Dharwad, India
                         </li>
                     </ul>
-
                 </div>
 
                 <div id="sections" className={`${gridClass}`}>
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Company</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#services" className="text-black">Our Services</a></li>
-                            <li><a href="#contact" className="text-black">Contact Us</a></li>
-                            <li><a href="#about" className="text-black">About</a></li>
+                            <li><a href="/services" className="text-black">Our Services</a></li>
+                            <li><a href="/contact" className="text-black">Contact Us</a></li>
+                            <li><a href="/about" className="text-black">About</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#apply" className="text-black">Apply</a></li>
+                            <li><a href="/internships" className="text-black">Apply</a></li>
                             <li><a href="#learnmore" className="text-black">Learn more</a></li>
                         </ul>
                     </div>
@@ -72,7 +71,16 @@ const Footer = () => {
                         <h3 className="text-black text-left font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><a href="#help" className="text-black">Help</a></li>
-                            <li><a href="https://www.termsfeed.com/live/f5d7351c-2f01-434c-83a7-6b87bfdf2624" className="text-black">Privacy Policy</a></li>
+                            <li>
+                                <a 
+                                    href="https://www.termsfeed.com/live/f5d7351c-2f01-434c-83a7-6b87bfdf2624" 
+                                    className="text-black" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    Privacy Policy
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -89,14 +97,30 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
                     <div className="flex items-center mb-2 md:mb-0">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
-                        <a href="https://www.instagram.com/ciresta.official" className="text-black-900 ml-2">Follow us on Instagram</a>
+                        <a 
+                            href="https://www.instagram.com/ciresta.official" 
+                            className="text-black-900 ml-2" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Follow us on Instagram
+                        </a>
                     </div>
                     <div className="flex items-center">
                         <FontAwesomeIcon icon={faLinkedin} className="text-black" />
-                        <a href="https://www.linkedin.com/in/ciresta-company-0168ba333/" className="text-black ml-2">Follow us on LinkedIn</a>
+                        <a 
+                            href="https://www.linkedin.com/in/ciresta-company-0168ba333/" 
+                            className="text-black ml-2" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Follow us on LinkedIn
+                        </a>
                     </div>
                 </div>
-                <p className="text-gray-600 text-center text-sm md:text-left" style={{ fontSize: "12px", margin: "7px" }}>2024 &copy; Copyright - Ciresta Technologies</p>
+                <p className="text-gray-600 text-center text-sm md:text-left" style={{ fontSize: "12px", margin: "7px" }}>
+                    2024 &copy; Copyright - Ciresta Technologies
+                </p>
             </div>
         </div>
     );
