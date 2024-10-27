@@ -11,6 +11,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  // Close menu when a navigation link is clicked on mobile
+  const closeMenu = () => {
+    if (isOpen) setIsOpen(false);
+  };
+
   return (
     <nav
       className="flex sticky-nav-ciresta justify-between items-center py-6 px-4 md:px-12 relative z-20"
@@ -22,7 +27,7 @@ const Navbar = () => {
     >
       {/* Logo and Brand */}
       <div className="flex items-center space-x-2">
-        <NavLink to="/" className="flex items-center space-x-2">
+        <NavLink to="/" className="flex items-center space-x-2" onClick={closeMenu}>
           <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
           <span className="font-semibold text-xl" style={{ color: '#6060bb' }}>
             Ciresta Technologies
@@ -32,10 +37,18 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <div className="hidden md:flex space-x-16 font-semibold pr-20 text-xl">
-        <NavLinkStyled to="/internships" currentPath={location.pathname}>Internships</NavLinkStyled>
-        <NavLinkStyled to="/about" currentPath={location.pathname}>About</NavLinkStyled>
-        <NavLinkStyled to="/services" currentPath={location.pathname}>Services</NavLinkStyled>
-        <NavLinkStyled to="/contact" currentPath={location.pathname}>Contact Us</NavLinkStyled>
+        <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
+          Internships
+        </NavLinkStyled>
+        <NavLinkStyled to="/about" currentPath={location.pathname} closeMenu={closeMenu}>
+          About
+        </NavLinkStyled>
+        <NavLinkStyled to="/services" currentPath={location.pathname} closeMenu={closeMenu}>
+          Services
+        </NavLinkStyled>
+        <NavLinkStyled to="/contact" currentPath={location.pathname} closeMenu={closeMenu}>
+          Contact Us
+        </NavLinkStyled>
       </div>
 
       {/* Mobile Menu Icon */}
@@ -59,19 +72,25 @@ const Navbar = () => {
           }}
         >
           <div className="flex flex-col">
-            <NavLinkStyled to="/internships" currentPath={location.pathname}>Internships</NavLinkStyled>
-            <NavLinkStyled to="/about" currentPath={location.pathname}>About</NavLinkStyled>
-            <NavLinkStyled to="/services" currentPath={location.pathname}>Services</NavLinkStyled>
-            <NavLinkStyled to="/contact" currentPath={location.pathname}>Contact Us</NavLinkStyled>
+            <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
+              Internships
+            </NavLinkStyled>
+            <NavLinkStyled to="/about" currentPath={location.pathname} closeMenu={closeMenu}>
+              About
+            </NavLinkStyled>
+            <NavLinkStyled to="/services" currentPath={location.pathname} closeMenu={closeMenu}>
+              Services
+            </NavLinkStyled>
+            <NavLinkStyled to="/contact" currentPath={location.pathname} closeMenu={closeMenu}>
+              Contact Us
+            </NavLinkStyled>
           </div>
         </div>
       )}
     </nav>
   );
 };
-
-// Link Component with Active State Detection
-const NavLinkStyled = ({ to, children, currentPath }) => {
+const NavLinkStyled = ({ to, children, currentPath, closeMenu }) => {
   const isActive = currentPath === to;
 
   return (
@@ -83,6 +102,7 @@ const NavLinkStyled = ({ to, children, currentPath }) => {
         textDecoration: 'none', // No underline
         transition: 'color 0.3s ease-in-out',
       }}
+      onClick={closeMenu} // Close menu when a link is clicked
       onMouseEnter={(e) => (e.target.style.color = '#6060bb')}
       onMouseLeave={(e) => (e.target.style.color = isActive ? '#6060bb' : 'white')}
     >

@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
 
 const Footer = () => {
-    const [gridClass, setGridClass] = useState("grid grid-cols-2"); // Default to 2 columns for mobile
+    const [gridClass, setGridClass] = useState("grid grid-cols-2");
 
     useEffect(() => {
         const updateGridClass = () => {
@@ -55,15 +56,15 @@ const Footer = () => {
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Company</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="/services" className="text-black">Our Services</a></li>
-                            <li><a href="/contact" className="text-black">Contact Us</a></li>
-                            <li><a href="/about" className="text-black">About</a></li>
+                            <li><Link to="/services" className="text-black">Our Services</Link></li>
+                            <li><Link to="/contact" className="text-black">Contact Us</Link></li>
+                            <li><Link to="/about" className="text-black">About</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="/internships" className="text-black">Apply</a></li>
+                            <li><Link to="/internships" className="text-black">Apply</Link></li>
                             <li><a href="#learnmore" className="text-black">Learn more</a></li>
                         </ul>
                     </div>

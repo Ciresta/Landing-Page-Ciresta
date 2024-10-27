@@ -3,8 +3,7 @@ import Hero from './Hero';
 
 import CoreValues from './CoreValues';
 import OneStepSolution from './OneStepSolution';
-import Services from './Services';
-import Team from './Team';
+import WhyChooseUs from './WhyChooseUs';
 
 
 const HeroSection = () => {
@@ -14,10 +13,8 @@ const HeroSection = () => {
       <Hero />
       <CoreValues />
       <OneStepSolution />
-      <Services />
-      <Team />
-      {/* <Contact /> */}
-      
+      <WhyChooseUs />
+
     </div>
   );
 };
