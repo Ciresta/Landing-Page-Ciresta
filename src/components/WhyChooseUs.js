@@ -8,7 +8,7 @@ import backgroundImage from '../assets/images/hero/innvative.jpeg';
 const WhyChooseUs = () => {
   return (
     <section className="bg-black py-16 relative overflow-hidden">
-      <div className="absolute inset-0 transform -translate-y-1/2">
+      <div className="absolute inset-0 transform -translate-y-1/2 z-0">
         <img
           src={backgroundImage}
           alt="Background Graphic"
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10"> {/* Set z-10 */}
         <h2 className="text-5xl font-bold text-center text-white mb-6 poppins-semibold">
           Why <span className="ciresta-color">Choose Us?</span>
         </h2>
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105">
+          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105 z-10"> {/* z-10 */}
             <h3 className="text-2xl poppins-semibold text-white mb-3">Innovative <span className="ciresta-color">Solutions</span></h3>
             <p className="text-gray-300 poppins-regular-italic mb-4">
               We leverage <span className="poppins-bold-italic">cutting-edge technology</span> to create solutions that stand out and drive results.
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
             />
           </div>
 
-          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105">
+          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105 z-10"> {/* z-10 */}
             <h3 className="text-2xl poppins-semibold text-white mb-3">Expert <span className="ciresta-color">Team</span></h3>
             <p className="text-gray-300 poppins-regular-italic mb-4">
               Our experienced professionals are dedicated to <span className="poppins-bold-italic">delivering excellence</span> at every step.
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
             />
           </div>
 
-          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105">
+          <div className="relative overflow-hidden rounded-lg p-6 shadow-lg bg-[#1a1a1a] transition-transform duration-300 transform hover:scale-105 z-10"> {/* z-10 */}
             <h3 className="text-2xl poppins-semibold text-white mb-3">Client-Centric <span className="ciresta-color">Approach</span></h3>
             <p className="text-gray-300 poppins-regular-italic mb-4">
               We prioritize your needs, ensuring that our solutions align perfectly with your <span className="poppins-bold-italic">business goals.</span>
@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className="relative z-10 mt-12">
+        <div className="relative z-10 mt-12"> {/* z-10 */}
           <h3 className="text-3xl poppins-bold text-center text-white mb-6">
             Our <span className="ciresta-color">Commitment</span> to You
           </h3>

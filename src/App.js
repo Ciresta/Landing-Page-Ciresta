@@ -27,6 +27,7 @@ function App() {
     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.15)',
     fontFamily: 'Arial, sans-serif',
     color: '#6f00ff',
+    zIndex: '50',
     width: '50px',
     height: '50px',
     display: 'flex',
