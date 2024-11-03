@@ -31,7 +31,7 @@ const Footer = () => {
                         <img src={logo} alt="Ciresta Technologies Logo" className="w-6 h-6 flex-shrink-0 mr-2" />
                         <h2 className="text-xl font-semibold text-black">Ciresta Technologies</h2>
                     </div>
-                    <p className="text-black mb-4 text-left">One step Solutions for your requirements</p>
+                    <p className="text-black mt-[-12px] mb-4 ml-8 text-left text-sm poppins-extralight-italic">One step Solutions for your requirements</p>
                     <ul className="text-black text-[15px] text-left space-y-1 mb-8">
                         <li className="flex items-center">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
@@ -47,8 +47,11 @@ const Footer = () => {
                         </li>
                         <li className="flex items-center">
                             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" />
-                            Hubli-Dharwad, India
+                            <a href="https://www.google.com/maps/search/?api=1&query=Hubli-Dharwad,India" target="_blank" rel="noopener noreferrer">
+                                Hubli-Dharwad, India
+                            </a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -65,18 +68,18 @@ const Footer = () => {
                         <h3 className="text-black text-left font-semibold mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><Link to="/internships" className="text-black">Apply</Link></li>
-                            <li><a href="#learnmore" className="text-black">Learn more</a></li>
+                            <li><Link to="/internships" className="text-black">Learn more</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Resources</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#help" className="text-black">Help</a></li>
+                            <li><Link to="/contact" className="text-black">Help</Link></li>
                             <li>
-                                <a 
-                                    href="https://www.termsfeed.com/live/f5d7351c-2f01-434c-83a7-6b87bfdf2624" 
-                                    className="text-black" 
-                                    target="_blank" 
+                                <a
+                                    href="https://www.termsfeed.com/live/f5d7351c-2f01-434c-83a7-6b87bfdf2624"
+                                    className="text-black"
+                                    target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     Privacy Policy
@@ -98,16 +101,16 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 mt-4 md:mt-0">
                     <div className="flex items-center mb-2 md:mb-0">
                         <FontAwesomeIcon icon={faInstagram} className="text-black" />
-                        <a 
-                            href="https://www.instagram.com/ciresta.official" 
-                            className="text-black-900 ml-2" 
-                            target="_blank" 
+                        <a
+                            href="https://www.instagram.com/ciresta.official"
+                            className="text-black-900 ml-2"
+                            target="_blank"
                             rel="noopener noreferrer"
                         >
                             Follow us on Instagram
                         </a>
                     </div>
-                    <div className="flex items-center">
+                    {/* <div className="flex items-center">
                         <FontAwesomeIcon icon={faLinkedin} className="text-black" />
                         <a 
                             href="https://www.linkedin.com/in/ciresta-company-0168ba333/" 
@@ -117,7 +120,7 @@ const Footer = () => {
                         >
                             Follow us on LinkedIn
                         </a>
-                    </div>
+                    </div> */}
                 </div>
                 <p className="text-gray-600 text-center text-sm md:text-left" style={{ fontSize: "12px", margin: "7px" }}>
                     2024 &copy; Copyright - Ciresta Technologies
