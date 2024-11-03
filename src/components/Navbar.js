@@ -5,13 +5,12 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Access current path
+  const location = useLocation(); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close menu when a navigation link is clicked on mobile
   const closeMenu = () => {
     if (isOpen) setIsOpen(false);
   };
@@ -21,11 +20,10 @@ const Navbar = () => {
       className="flex sticky-nav-ciresta justify-between items-center py-6 px-4 md:px-12 relative z-20"
       style={{
         position: 'sticky',
-        backgroundColor: 'rgba(72, 72, 72, 0.25)', // Set the original navbar background color
+        backgroundColor: 'rgba(72, 72, 72, 0.25)', 
         color: 'white',
       }}
     >
-      {/* Logo and Brand */}
       <div className="flex items-center space-x-2">
         <NavLink to="/" className="flex items-center space-x-2" onClick={closeMenu}>
           <img src={logo} alt="Ciresta Technologies Logo" className="h-8" />
@@ -35,7 +33,6 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      {/* Desktop Links */}
       <div className="hidden md:flex space-x-16 font-semibold pr-20 text-xl">
         <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
           Internships
@@ -51,24 +48,23 @@ const Navbar = () => {
         </NavLinkStyled>
       </div>
 
-      {/* Mobile Menu Icon */}
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white">
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div
           className="absolute top-20 right-0 w-full transition-all duration-300 ease-in-out transform opacity-100 translate-y-0"
           style={{
             background: 'rgba(72, 72, 72, 0.64)',
-            borderRadius: '16px',
+            borderRadius: '0px',
             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
             backdropFilter: 'blur(6.7px)',
             WebkitBackdropFilter: 'blur(6.7px)',
             border: '1px solid rgba(72, 72, 72, 0.3)',
+            
           }}
         >
           <div className="flex flex-col">
@@ -98,11 +94,11 @@ const NavLinkStyled = ({ to, children, currentPath, closeMenu }) => {
       to={to}
       className="block px-4 py-2 text-xl"
       style={{
-        color: isActive ? '#6060bb' : 'white', // Active link color
-        textDecoration: 'none', // No underline
+        color: isActive ? '#6060bb' : 'white', 
+        textDecoration: 'none', 
         transition: 'color 0.3s ease-in-out',
       }}
-      onClick={closeMenu} // Close menu when a link is clicked
+      onClick={closeMenu} 
       onMouseEnter={(e) => (e.target.style.color = '#6060bb')}
       onMouseLeave={(e) => (e.target.style.color = isActive ? '#6060bb' : 'white')}
     >
