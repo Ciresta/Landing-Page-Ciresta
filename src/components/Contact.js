@@ -23,8 +23,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send('service_1qboqdq', 'template_eohv22p', formData, 'rlmMu5j3kqZFcb7yc')
+    // Define your EmailJS service ID, template ID, and user ID
+    const SERVICE_ID = 'service_1qboqdq'; // Replace with your EmailJS service ID
+    const TEMPLATE_ID = 'template_eohv22p'; // Replace with your EmailJS template ID
+    const USER_ID = 'rlmMu5j3kqZFcb7yc'; // Replace with your EmailJS user ID
 
+    // Create the email data object
+    const emailData = {
+      to_name: formData.name,        // Recipient's name
+      from_name: formData.name,      // Sender's name
+      message: formData.message,      // Message content
+      reply_to: formData.email,       // Email address for replies
+      phone: formData.phone,          // Phone number (if needed)
+    };
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, emailData, USER_ID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         toast.success('Successfully sent! We will get back in touch soon.'); // Show success toast
