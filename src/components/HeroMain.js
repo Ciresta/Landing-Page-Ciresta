@@ -4,6 +4,7 @@ import Hero from './Hero';
 import CoreValues from './CoreValues';
 import OneStepSolution from './OneStepSolution';
 import WhyChooseUs from './WhyChooseUs';
+import FAQs from './FAQs';
 
 
 const HeroSection = () => {
@@ -14,6 +15,7 @@ const HeroSection = () => {
       <CoreValues />
       <OneStepSolution />
       <WhyChooseUs />
+      <FAQs />
 
     </div>
   );

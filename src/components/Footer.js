@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
@@ -59,9 +59,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Company</h3>
                         <ul className="space-y-2 text-left text-[15px]">
+                            <li><Link to="/about" className="text-black">About</Link></li>
                             <li><Link to="/services" className="text-black">Our Services</Link></li>
                             <li><Link to="/contact" className="text-black">Contact Us</Link></li>
-                            <li><Link to="/about" className="text-black">About</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -90,8 +90,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-black text-left font-semibold mb-4">Support</h3>
                         <ul className="space-y-2 text-left text-[15px]">
-                            <li><a href="#faqs" className="text-black">FAQs</a></li>
-                            <li><a href="#documentation" className="text-black">Feedback</a></li>
+                            {/* <li><a href="#faqs" className="text-black">FAQs</a></li> */}
+                            <li><Link to="/faqs" className="text-black">FAQs</Link></li>
+                            <li><a target='_blank   ' href="https://forms.gle/ffFENsbk9CkCM7Zq6" className="text-black">Feedback</a></li>
                         </ul>
                     </div>
                 </div>

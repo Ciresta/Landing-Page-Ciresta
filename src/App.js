@@ -8,6 +8,7 @@ import Internship from './components/internship/Internship';
 import About from './components/MainAbout';
 import MainServices from './components/MainServices';
 import Contact from './components/Contact';
+import FAQ from './components/FAQs';
 import ScrollToTop from './components/Scroll'; 
 import GoTop from "react-scroll-to-top";
 import { FaChevronUp } from 'react-icons/fa';
@@ -55,6 +56,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<MainServices />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/faqs" element={<FAQ />} />
           </Routes>
           <Footer /> {/* Footer is now common to all pages */}
         </div>
