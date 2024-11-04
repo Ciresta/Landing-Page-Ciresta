@@ -17,11 +17,11 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
-                <h2 className="text-2xl md:text-5xl font-bold text-center text-white mb-6 poppins-semibold">
+                <h2 className="text-3xl md:text-4xl text-white poppins-semibold">
                     Why <span className="ciresta-color">Choose Us?</span>
                 </h2>
 
-                <p className="text-center text-gray-300 poppins-light text-lg mb-12 max-w-3xl mx-auto">
+                <p className="text-center text-gray-300 poppins-light text-sm md:text-lg mt-2 mb-12 max-w-3xl mx-auto">
                     We provide innovative <span className="poppins-bold">digital solutions</span> tailored to your needs, ensuring your success in the <span className="poppins-bold">online world.</span>
                 </p>
 

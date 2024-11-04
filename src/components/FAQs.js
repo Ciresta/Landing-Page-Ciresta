@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {Link} from 'react-router-dom';
 
 const FAQCenter = () => {
   const FAQData = [
@@ -102,8 +103,8 @@ const FAQCenter = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-black px-4 md:px-6 py-12">
       <div className="w-full max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl text-white poppins-semibold"><spam className='ciresta-color'>Got Questions?</spam> We Have Answers!</h1>
-        <p className="text-gray-300 mt-3 text-lg mb-10 max-w-3xl mx-auto font-poppins-extralight">
+        <h1 className="text-3xl md:text-4xl text-white poppins-semibold"><spam className='ciresta-color'>Got Questions?</spam> We Have Answers!</h1>
+        <p className="text-center text-gray-300 poppins-light text-sm md:text-lg mt-2 mb-12 max-w-3xl mx-auto">
           Discover answers to <spam className='font-bold'>  common questions</spam> about our services, privacy policies, support, and more.
         </p>
 
@@ -142,7 +143,7 @@ const FAQCenter = () => {
         <div className="mt-12">
           <p className="text-gray-300 text-lg">
             Still not got your question?{' '}
-            <a href="mailto:contact@example.com" className="ciresta-color hover:underline">Contact us</a>.
+            <Link to="/contact" className="ciresta-color hover:underline">Contact us</Link>.
           </p>
         </div>
       </div>
