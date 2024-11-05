@@ -31,7 +31,7 @@ const Footer = () => {
                         <img src={logo} alt="Ciresta Technologies Logo" className="w-6 h-6 flex-shrink-0 mr-2" />
                         <h2 className="text-xl font-semibold text-black">Ciresta Technologies</h2>
                     </div>
-                    <p className="text-black mt-[-12px] mb-4 ml-8 text-left text-sm poppins-extralight-italic">One step Solutions for your requirements</p>
+                    <p className="text-black mt-[-12px] mb-4 ml-8 text-left text-sm poppins-extralight-italic">One step Solutions for your dreams</p>
                     <ul className="text-black text-[15px] text-left space-y-1 mb-8">
                         <li className="flex items-center">
                             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />

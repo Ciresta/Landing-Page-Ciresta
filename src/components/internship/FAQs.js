@@ -84,7 +84,7 @@ const FAQCenter = () => {
                       <i className={`fas fa-${openIndex[categoryIndex] === questionIndex ? 'minus' : 'plus'} ciresta-color text-lg`}></i>
                     </div>
                     <div
-                      className={`${openIndex[categoryIndex] === questionIndex ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                      className={`${openIndex[categoryIndex] === questionIndex ? 'h-auto opacity-100' : 'h-0 opacity-0'
                         } overflow-hidden transition-all duration-500 ease-in-out`}
                     >
                       <p className="text-gray-400 mt-3 text-left font-poppins-extralight">{faq.answer}</p>
