@@ -6,7 +6,7 @@ import CashPrizeIcon from '../../assets/images/internship/Gift.svg';
 const WhatYouWillGet = () => {
   return (
     <div className="bg-black text-white font-poppins p-8">
-      <h1 className="text-4xl font-bold mb-6 text-center">
+      <h1 className="text-3xl font-bold mb-6 text-center">
         What you will <span className='ciresta-color'>get</span>
       </h1>
 

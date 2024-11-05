@@ -10,35 +10,35 @@ const FAQCenter = () => {
       questions: [
         {
           question: 'What types of internships do you offer?',
-          answer: 'We offer internships in Full Stack Development, Frontend Development, and UI/UX Design.',
+          answer: 'A: We offer internships in Full Stack Development, Frontend Development, and UI/UX Design.',
         },
         {
           question: 'Who is eligible to apply for an internship?',
-          answer: 'Anyone with a passion for technology and a willingness to learn is encouraged to apply for our internships, regardless of their academic background or experience level.',
+          answer: 'A: Anyone with a passion for technology and a willingness to learn is encouraged to apply for our internships, regardless of their academic background or experience level.',
         },
         {
           question: 'How long do internships last?',
-          answer: 'Internships last for 4 weeks, during which interns work on projects, collaborate with team members, and participate in training sessions.',
+          answer: 'A: Internships last for 4 weeks, during which interns work on projects, collaborate with team members, and participate in training sessions.',
         },
         {
           question: 'Will I receive training and mentorship during the internship?',
-          answer: 'Absolutely! Interns will receive training and mentorship from experienced engineering students in the company, fostering a supportive environment where you can learn and grow.',
+          answer: 'A: Absolutely! Interns will receive training and mentorship from experienced engineering students in the company, fostering a supportive environment where you can learn and grow.',
         },
         {
           question: 'What can I expect from the internship experience?',
-          answer: 'Interns can expect to work on real-world projects, collaborate with team members, attend meetings, and gain hands-on experience in their field. We also provide opportunities for networking and professional development.',
+          answer: 'A: Interns can expect to work on real-world projects, collaborate with team members, attend meetings, and gain hands-on experience in their field. We also provide opportunities for networking and professional development.',
         },
         {
           question: 'Is there a chance of full-time employment after the internship?',
-          answer: 'Yes! There is an opportunity for continued internships with a stipend for top performers based on their contributions during the internship.',
+          answer: 'A: Yes! There is an opportunity for continued internships with a stipend for top performers based on their contributions during the internship.',
         },
         {
           question: 'What skills are you looking for in an intern?',
-          answer: 'We welcome applicants from all backgrounds and skill levels! While technical skills relevant to the position are beneficial, we value enthusiasm, a willingness to learn, and the ability to work well in a team.',
+          answer: 'A: We welcome applicants from all backgrounds and skill levels! While technical skills relevant to the position are beneficial, we value enthusiasm, a willingness to learn, and the ability to work well in a team.',
         },
         {
           question: 'Are there any rewards or recognition in the internship program?',
-          answer: 'Yes! We recognize exceptional talent and hard work through various rewards, including cash prizes, merchandise, LinkedIn recommendations for top performers, and a completion certificate for all interns.',
+          answer: 'A: Yes! We recognize exceptional talent and hard work through various rewards, including cash prizes, merchandise, LinkedIn recommendations for top performers, and a completion certificate for all interns.',
         },
       ],
     },
