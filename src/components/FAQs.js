@@ -52,7 +52,7 @@ const FAQCenter = () => {
       questions: [
         {
           question: 'What type of support do you offer after project completion?',
-          answer: 'To delete your account, please contact our support team for assistance.',
+          answer: 'After project completion, we provide ongoing support for troubleshooting, updates, and maintenance.',
         },
         {
           question: 'What should I do if I encounter an issue in the project?',

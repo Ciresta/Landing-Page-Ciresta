@@ -6,6 +6,7 @@ import WhatYouWillGet from "./WhatGet";
 import Recommendation from "./Recommendation";
 import Register from "./Register";
 import Marquee from "./Marquee";
+import FAQ from "./FAQs";
 // import Navbar from "../../components/Navbar";
 // import Footer from "../../components/Footer";
 import Domains from "./Domains";
@@ -22,6 +23,7 @@ function Internship() {
         <WhyIntern/>
         <WhatYouWillGet/>
         <Recommendation/>
+        <FAQ/>
         <Register/>
         {/* <Footer/> */}
     </div>
