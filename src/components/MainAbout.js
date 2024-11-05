@@ -5,7 +5,7 @@ import image1 from '../assets/images/about/main-team/viraj.jpg';
 import image2 from '../assets/images/about/main-team/abhi.png';
 import image3 from '../assets/images/about/main-team/rahul.webp';
 import image4 from '../assets/images/about/main-team/ankit.jpg';
-import leftBgImage from '../assets/images/about/main-team/team-logo.svg'; // Add your left-side background image
+import leftBgImage from '../assets/images/about/main-team/team-logo.svg';
 import { FaLinkedin, FaGithub, FaBehance } from 'react-icons/fa';
 
 const teamMembers = [
@@ -40,10 +40,11 @@ const teamMembers = [
 
 const AboutUs = () => {
   const [loading, setLoading] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
     const preloadImages = async () => {
-      const images = [aboutUsImg, companyBg];
+      const images = [aboutUsImg, companyBg, image1, image2, image3, image4];
       await Promise.all(images.map(src => {
         return new Promise(resolve => {
           const img = new Image();
@@ -51,38 +52,34 @@ const AboutUs = () => {
           img.onload = resolve;
         });
       }));
+      setImagesLoaded(true);
       setLoading(false);
     };
 
     preloadImages();
   }, []);
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen text-white bg-black">
-        <h1 className="text-3xl">Please wait...</h1>
-      </div>
-    );
-  }
-
   return (
     <div className="relative font-[sans-serif] text-white bg-black min-h-screen py-16">
-      
       {/* Background Images */}
       <section className="relative">
         <img
-          src={aboutUsImg}
+          src={loading ? '' : aboutUsImg} // Load the image only after loading
           alt="About Us Banner"
           className="w-full h-auto object-cover"
+          style={{ display: loading ? 'none' : 'block' }} // Hide image while loading
         />
+        {loading && <div className="skeleton-loader h-64 bg-gray-800 w-full"></div>} {/* Skeleton Loader */}
       </section>
 
       <section className="relative">
         <img
-          src={companyBg}
+          src={loading ? '' : companyBg}
           alt="Company Background"
           className="w-full h-auto object-cover"
+          style={{ display: loading ? 'none' : 'block' }}
         />
+        {loading && <div className="skeleton-loader h-64 bg-gray-800 w-full"></div>}
       </section>
 
       {/* Team Intro Section */}
@@ -117,8 +114,9 @@ const AboutUs = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover rounded-lg"
+                className={`w-full h-full object-cover rounded-lg ${imagesLoaded ? '' : 'hidden'}`} // Hide image until loaded
               />
+              {!imagesLoaded && <div className="skeleton-loader h-full w-full bg-gray-800"></div>} {/* Skeleton Loader for Team Members */}
               <div className="absolute inset-0 bg-gradient-to-t from-black opacity-40 rounded-lg"></div>
             </div>
             <div className="text-center">
