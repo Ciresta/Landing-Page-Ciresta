@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
               <div className="mb-6">
                 <input
-                  type="text"
+                  type="number"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
