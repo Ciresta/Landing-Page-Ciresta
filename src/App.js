@@ -1,5 +1,4 @@
-// App.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroMain from './components/HeroMain';
 import Navbar from './components/Navbar'; // Import Navbar
@@ -14,6 +13,18 @@ import GoTop from "react-scroll-to-top";
 import { FaChevronUp } from 'react-icons/fa';
 
 function App() {
+  useEffect(() => {
+    // Get current visit count from localStorage, or initialize it to 0 if it doesn't exist
+    const currentCount = localStorage.getItem('visitorCount') || 0;
+    const newCount = parseInt(currentCount) + 1;
+
+    // Store the new count in localStorage
+    localStorage.setItem('visitorCount', newCount);
+
+    // Log the current visitor count to the console
+    console.log(`Visitor count: ${newCount}`);
+  }, []);
+  // Function to clear the count
   return (
     <Router>
       <ScrollToTop> 

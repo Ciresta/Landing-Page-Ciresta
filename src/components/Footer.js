@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhoneAlt, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
@@ -111,17 +112,17 @@ const Footer = () => {
                             Follow us on Instagram
                         </a>
                     </div>
-                    {/* <div className="flex items-center">
+                    <div className="flex items-center">
                         <FontAwesomeIcon icon={faLinkedin} className="text-black" />
                         <a 
-                            href="https://www.linkedin.com/in/ciresta-company-0168ba333/" 
+                            href="https://www.linkedin.com/company/ciresta" 
                             className="text-black ml-2" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             Follow us on LinkedIn
                         </a>
-                    </div> */}
+                    </div>
                 </div>
                 <p className="text-gray-600 text-center text-sm md:text-left" style={{ fontSize: "12px", margin: "7px" }}>
                     2024 &copy; Copyright - Ciresta Technologies
