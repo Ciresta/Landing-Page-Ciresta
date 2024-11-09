@@ -36,7 +36,9 @@ const Heads = () => {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl poppins-light-italic mt-1 text-white">"Ciresta Technologies"</h1>
           <h2 className="text-2xl sm:text-4xl lg:text-6xl poppins-semibold mt-1 sm:mt-2 text-white">Internship Program</h2>
           <a
-            href="#register"
+            href="https://forms.gle/UbhYX7DtCmNvxuDx5"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block ciresta-bg text-white text-center py-2 px-4 rounded-lg shadow-lg w-32 sm:w-40 text-xs sm:text-sm mt-4 font-medium"
           >
             Apply Now →

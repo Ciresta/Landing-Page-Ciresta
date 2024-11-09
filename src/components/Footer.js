@@ -69,7 +69,7 @@ const Footer = () => {
                         <h3 className="text-black text-left font-semibold mb-4">Internships</h3>
                         <ul className="space-y-2 text-left text-[15px]">
                             <li><Link to="/internships" className="text-black">Apply</Link></li>
-                            <li><Link to="/internships" className="text-black">Learn more</Link></li>
+                            <li><a href="https://drive.google.com/file/d/1ZjrkEHEVRJJfjD0PGCwnBwYNJKfc75hn/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="text-black">Learn more</a></li>
                         </ul>
                     </div>
                     <div>
