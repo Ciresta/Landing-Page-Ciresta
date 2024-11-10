@@ -9,8 +9,8 @@ const Domains = () => {
       <div className="max-w-6xl mx-auto p-10 flex flex-col md:flex-row items-center justify-center">
         <div className="text-center mb-10 md:mb-0 md:w-1/2 md:mr-20">
           <h1 className="text-5xl font-semibold">Internship Domains</h1>
-          <p className="text-gray-400 mt-2">Choose the domain you like and get started with the internship</p>
-          <a href="https://forms.gle/UbhYX7DtCmNvxuDx5" target='_blank' rel="noopener noreferrer" className="ciresta-bg mt-2 text-white font-medium px-6 py-3 w-40 hover:bg-indigo-600 transition duration-300" style={{ borderRadius: "30px" }}>
+          <p className="text-gray-400 mt-2 mb-8">Choose the domain you like and get started with the internship</p>
+          <a href="https://forms.gle/UbhYX7DtCmNvxuDx5" target='_blank' rel="noopener noreferrer" className="ciresta-bg mt-8 text-white font-medium px-6 py-3 w-40 hover:bg-indigo-600 transition duration-300" style={{ borderRadius: "30px" }}>
             Register
           </a>
         </div>
