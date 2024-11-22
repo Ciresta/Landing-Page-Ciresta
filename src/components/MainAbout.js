@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import aboutUsImg from '../assets/images/about/about-hero.svg';
+import aboutUsImg from '../assets/images/about/about-hero1.svg';
 import companyBg from '../assets/images/about/company-bg.svg';
 import image1 from '../assets/images/about/main-team/viraj.jpg';
 import image2 from '../assets/images/about/main-team/abhi.png';
