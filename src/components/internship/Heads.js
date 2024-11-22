@@ -43,6 +43,7 @@ const Heads = () => {
           >
             Apply Now →
           </a>
+          <p className="text-lg text-red-500 mb-1 mt-4 sm:mb-2 poppins-light-italic">Internship closes soon!</p>
         </div>
       </div>
     </div>
