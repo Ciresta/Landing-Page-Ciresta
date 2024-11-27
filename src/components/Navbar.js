@@ -34,9 +34,9 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex space-x-16 font-semibold pr-20 text-xl">
-        <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
+        {/* <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
           Internships
-        </NavLinkStyled>
+        </NavLinkStyled> */}
         <NavLinkStyled to="/about" currentPath={location.pathname} closeMenu={closeMenu}>
           About
         </NavLinkStyled>
@@ -68,9 +68,9 @@ const Navbar = () => {
           }}
         >
           <div className="flex flex-col">
-            <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
+            {/* <NavLinkStyled to="/internships" currentPath={location.pathname} closeMenu={closeMenu}>
               Internships
-            </NavLinkStyled>
+            </NavLinkStyled> */}
             <NavLinkStyled to="/about" currentPath={location.pathname} closeMenu={closeMenu}>
               About
             </NavLinkStyled>
