@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HeroMain from './components/HeroMain';
 import Navbar from './components/Navbar'; // Import Navbar
 import Footer from './components/Footer'; // Import Footer
-import Internship from './components/internship/Internship';
+// import Internship from './components/internship/Internship';
 import About from './components/MainAbout';
 import MainServices from './components/MainServices';
 import Contact from './components/Contact';
@@ -52,7 +52,7 @@ function App() {
                 </>
               }
             />
-            <Route path="/internships" element={<Internship />} />
+            {/* <Route path="/internships" element={<Internship />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<MainServices />} />
             <Route path="/contact" element={<Contact />} />
